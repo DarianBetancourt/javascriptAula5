@@ -1,11 +1,11 @@
 const pattern = new RegExp('^[A-Z]+$', 'i'); 
 let quantidade=3;//número de pessoas para comparar (pode ser mudado)
 let pessoas=repetição(quantidade);//obtém os dados de uma ou mais pessoas dependendo da variável de quantidade
-console.log("personas:");
+console.log("pessoas:");
 console.table(pessoas);//mostra no console os dados das pessoas que entraram
 console.log("comparacion:");
 console.table(compararIdadePessoas(pessoas));//mostra no console os dados das pessoas de mayor e menor idade
-
+console.log(compararIdadePessoas(pessoas).mayor.nome+" É mais velho que "+compararIdadePessoas(pessoas).menor.nome);
 
 //função para obtém os dados de uma ou mais pessoas dependendo da variável de quantidade
 function repetição(quantidade){
